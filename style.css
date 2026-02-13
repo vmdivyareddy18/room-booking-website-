@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    background: #eaf2ff;
+    text-align: center;
+}
+
+form {
+    background: white;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+input,
+button {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+}
+
+button {
+    background: blue;
+    color: white;
+    border: none;
+}
+
+.rooms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+}

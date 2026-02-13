@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rooms</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <h2>Room Booking System</h2>
+
+    <a href="/logout">Logout</a>
+
+    <div class="rooms">
+
+        {% for room in rooms %}
+
+        <div class="card">
+
+            <h3>Room {{room.no}}</h3>
+
+            <p>Price: ₹{{room.price}}</p>
+
+            <p>Status: {{room.status}}</p>
+
+            {% if room.status == "Available" %}
+            <a href="/book/{{room.id}}">Book Now</a>
+            {% else %}
+            <span>Booked</span>
+            {% endif %}
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</body>
+
+</html>
