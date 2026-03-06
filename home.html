@@ -16,23 +16,10 @@
 
         {% for room in rooms %}
 
-        <div class="card">
-            <a href="/room/{{room.id}}">
-                <h3>Room {{room.id}}</h3>
-                <h6>Type: {{room.type}}</h6>
-                <p>Price: ₹{{room.price}}</p>
 
-                <p>Status: {{room.status}}</p>
+    </div>
 
-                {% if room.status == "Available" %}
-                <a href="/book/{{room.id}}">Book Now</a>
-                {% else %}
-                <span>Booked</span>
-                {% endif %}
-
-        </div>
-
-        {% endfor %}
+    {% endfor %}
 
     </div>
 
