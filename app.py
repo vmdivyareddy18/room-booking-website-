@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, session
 
 app = Flask(__name__)
 app.secret_key = "secret123"
+# Commit 1: marker
 
 # Demo Data (Temporary Database)
 users = []
@@ -76,3 +77,5 @@ def logout():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+# Commit 9: marker
