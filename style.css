@@ -33,4 +33,9 @@ button {
     margin-top: 30px;
 }
 
-x
+.x {
+    background: rgb(146, 36, 36);
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+}
